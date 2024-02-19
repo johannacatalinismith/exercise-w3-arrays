@@ -12,6 +12,7 @@ const pokemons = [
   "Weedle",
   "Pikachu",
   "Pidgey",
+  "Yoyo",
 ];
 
 const countThem = () => {
@@ -68,7 +69,7 @@ const notTheCs = () => {
     }
   });
 };
-                                                  
+
 notTheCs();
 
 const nameAndIdThanks = () => {
@@ -77,16 +78,19 @@ const nameAndIdThanks = () => {
   pokemons.forEach((pokemon, index) => {
     console.log(`number ${index + 1} - ${pokemon}`);
   });
- }; 
+};
 
 nameAndIdThanks();
 
-
-
-const catchPokemon = (name) => {
+const catchPokemon = (Yoyo) => {
   // add a pokemon with a name of your choice to the list,
   // print the list so you see its there.
+  pokemons.forEach((pokemon, push) => {
+    console.log(`${push} - ${pokemon}`);
+  });
 };
+
+catchPokemon();
 
 const didICatchIt = (name) => {
   // check the pokemons to see if a specific pokemon is in the array
