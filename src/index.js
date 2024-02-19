@@ -12,7 +12,6 @@ const pokemons = [
   "Weedle",
   "Pikachu",
   "Pidgey",
-  "Yoyo",
 ];
 
 const countThem = () => {
@@ -21,7 +20,7 @@ const countThem = () => {
   console.log(`I have ${pokemons.length} pokemons!`);
 };
 //Here i call the function of countThem:
-countThem();
+//countThem();
 
 const orderThem = () => {
   pokemons.sort();
@@ -29,7 +28,7 @@ const orderThem = () => {
 };
 
 //Here I call the function of orderThem:
-orderThem();
+//orderThem();
 
 const flipThem = () => {
   // reverse the order of the pokemons
@@ -38,7 +37,7 @@ const flipThem = () => {
 };
 
 //Here I call the function of flipThem:
-flipThem();
+//flipThem();
 
 const makeThemBig = () => {
   // print the pokemons in UPPERCASE letters
@@ -48,7 +47,7 @@ const makeThemBig = () => {
 };
 
 //Here I call the function of makeThemBig:
-makeThemBig();
+//makeThemBig();
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
@@ -59,7 +58,7 @@ const onlyTheBs = () => {
   });
 };
 
-onlyTheBs();
+//onlyTheBs();
 
 const notTheCs = () => {
   // remove all pokemons that starts with C
@@ -70,7 +69,7 @@ const notTheCs = () => {
   });
 };
 
-notTheCs();
+//notTheCs();
 
 const nameAndIdThanks = () => {
   // print out name and index of all pokemons
@@ -80,33 +79,28 @@ const nameAndIdThanks = () => {
   });
 };
 
-nameAndIdThanks();
+//nameAndIdThanks();
 
-const catchPokemon = (Yoyo) => {
+const catchPokemon = () => {
   // add a pokemon with a name of your choice to the list,
   // print the list so you see its there.
-  pokemons.forEach((pokemon, push) => {
-    console.log(`${push} - ${pokemon}`);
-  });
+  pokemons.push("Yoyo");
+  console.log(pokemons);
 };
 
-catchPokemon();
+//catchPokemon();
 
-const didICatchIt = (Pikachu) => {
+const didICatchIt = (name) => {
   // check the pokemons to see if a specific pokemon is in the array
-  if (pokemons.includes("Pikachu")) {
-    console.log(`${Pikachu} - ${includes}`);
-  };
+  if (pokemons.includes(name)) {
+    console.log("Yes");
+  } else {
+    console.log("No");
+  }
 };
 
-didICatchIt();
-
-
-
-
-
-
-
+didICatchIt("Pikachu");
+didICatchIt("Teddy");
 
 const addInThirdPlace = () => {
   // add the pokemon "Clefairy" in the third place of the array
