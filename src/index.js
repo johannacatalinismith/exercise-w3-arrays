@@ -23,8 +23,12 @@ const countThem = () => {
 countThem();
 
 const orderThem = () => {
-  // order the pokemons alphabetically
+  pokemons.sort();
+  console.log(orderThem);
 };
+
+//Here I call the function of orderThem:
+orderThem();
 
 const flipThem = () => {
   // reverse the order of the pokemons
