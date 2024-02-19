@@ -68,14 +68,20 @@ const notTheCs = () => {
     }
   });
 };
-
-
+                                                  
 notTheCs();
 
 const nameAndIdThanks = () => {
   // print out name and index of all pokemons
   // like: number x - Squirtle
-};
+  pokemons.forEach((pokemon, index) => {
+    console.log(`number ${index + 1} - ${pokemon}`);
+  });
+ }; 
+
+nameAndIdThanks();
+
+
 
 const catchPokemon = (name) => {
   // add a pokemon with a name of your choice to the list,
