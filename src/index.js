@@ -51,7 +51,14 @@ makeThemBig();
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
+  pokemons.forEach((pokemon) => {
+    if (pokemon.startsWith("B")) {
+      console.log(pokemon);
+    }
+  });
 };
+
+onlyTheBs();
 
 const notTheCs = () => {
   // remove all pokemons that starts with C
