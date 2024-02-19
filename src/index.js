@@ -62,7 +62,15 @@ onlyTheBs();
 
 const notTheCs = () => {
   // remove all pokemons that starts with C
+  pokemons.forEach((pokemon) => {
+    if (!pokemon.startsWith("C")) {
+      console.log(pokemon);
+    }
+  });
 };
+
+
+notTheCs();
 
 const nameAndIdThanks = () => {
   // print out name and index of all pokemons
