@@ -92,9 +92,21 @@ const catchPokemon = (Yoyo) => {
 
 catchPokemon();
 
-const didICatchIt = (name) => {
+const didICatchIt = (Pikachu) => {
   // check the pokemons to see if a specific pokemon is in the array
+  if (pokemons.includes("Pikachu")) {
+    console.log(`${Pikachu} - ${includes}`);
+  };
 };
+
+didICatchIt();
+
+
+
+
+
+
+
 
 const addInThirdPlace = () => {
   // add the pokemon "Clefairy" in the third place of the array
