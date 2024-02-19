@@ -39,9 +39,6 @@ const flipThem = () => {
 //Here I call the function of flipThem:
 flipThem();
 
-
-
-
 const makeThemBig = () => {
   // print the pokemons in UPPERCASE letters
   for (let pokemon of pokemons) {
@@ -49,13 +46,8 @@ const makeThemBig = () => {
   }
 };
 
-
 //Here I call the function of makeThemBig:
 makeThemBig();
-
-
-
-
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
