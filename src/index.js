@@ -24,7 +24,7 @@ countThem();
 
 const orderThem = () => {
   pokemons.sort();
-  console.log(orderThem);
+  console.log(pokemons);
 };
 
 //Here I call the function of orderThem:
@@ -32,11 +32,30 @@ orderThem();
 
 const flipThem = () => {
   // reverse the order of the pokemons
+  pokemons.reverse();
+  console.log(pokemons);
 };
+
+//Here I call the function of flipThem:
+flipThem();
+
+
+
 
 const makeThemBig = () => {
   // print the pokemons in UPPERCASE letters
+  for (let pokemon of pokemons) {
+    console.log(pokemon.toUpperCase());
+  }
 };
+
+
+//Here I call the function of makeThemBig:
+makeThemBig();
+
+
+
+
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
